@@ -597,5 +597,19 @@ export default function StartupMentorship() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-medium">Product-Market Fit Workshop</h3>
-                    <p\
+                    <p className="text-xs text-muted-foreground">Virtual Workshop • 11:00 AM PST</p>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Learn how to validate your product and find the right market fit.
+                    </p>
+                  </div>
+                  <Button size="sm">Register</Button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+      </Tabs>
+    </div>
+  )
+}
 
