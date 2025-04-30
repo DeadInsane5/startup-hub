@@ -18,7 +18,7 @@ export function LoginForm({
       <div className="grid gap-6">
         <div className="grid gap-3">
           <Label htmlFor="email">Email</Label>
-          <Input id="email" type="email" placeholder="m@example.com" required />
+          <Input id="email" type="email" placeholder="name@example.com" required />
         </div>
         <div className="grid gap-3">
           <div className="flex items-center">
@@ -52,7 +52,7 @@ export function LoginForm({
       </div>
       <div className="text-center text-sm">
         Don&apos;t have an account?{" "}
-        <a href="#" className="underline underline-offset-4">
+        <a href="/register" className="underline underline-offset-4">
           Sign up
         </a>
       </div>
