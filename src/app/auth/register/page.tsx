@@ -23,19 +23,19 @@ export default function Register() {
           <div className="space-y-2">
             <h3 className="text-lg font-medium">I am a...</h3>
             <div className="grid gap-2">
-              <Link href="/register/startup">
+              <Link href="/auth/register/startup">
                 <Button className="w-full justify-between" size="lg">
                   Startup Founder
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="/register/customer">
+              <Link href="/auth/register/customer">
                 <Button className="w-full justify-between" variant="outline" size="lg">
                   Customer / Supporter
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="/register/investor">
+              <Link href="/auth/register/investor">
                 <Button className="w-full justify-between" variant="outline" size="lg">
                   Investor
                   <ArrowRight className="h-4 w-4" />
@@ -47,7 +47,7 @@ export default function Register() {
         <CardFooter className="flex justify-center">
           <div className="text-sm text-center">
             Already have an account?{" "}
-            <Link href="/login" className="text-primary underline underline-offset-4">
+            <Link href="/auth/login" className="text-primary underline underline-offset-4">
               Log in
             </Link>
           </div>
