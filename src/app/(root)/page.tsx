@@ -25,8 +25,8 @@ const page = () => {
           }} />
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
-        <div className="container px-4 md:px-6">
+      <section className="w-full py-6 md:py-12 lg:py-16 bg-background">
+        <div className="container min-w-full px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Platform Features</h2>
@@ -109,7 +109,7 @@ const page = () => {
       </section>
 
       <section className="w-full pb-12 md:pb-24 lg:pb-32 pt-6 md:pt-12 lg:pt-16">
-        <div className="container px-4 md:px-6">
+        <div className="container min-w-full px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Ready to Get Started?</h2>
