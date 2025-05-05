@@ -6,7 +6,7 @@ const page = () => {
     <Blog7 
       tagline='Latest Updates'
       heading='Blog Posts'
-      description='Discover the latest trends, tips, and best practices in modern web development. From UI components to design systems, stay updated with our expert insights.'
+      description='Discover the latest trends, tips, and best practices in businesses and startups management and stay updated with our expert insights.'
       buttonText='View all articles'
       buttonUrl='https://shadcnblocks.com'
       posts={[

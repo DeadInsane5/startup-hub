@@ -3,7 +3,8 @@ import type { Metadata } from 'next';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import Layout from '@/components/layout'; // Import the Layout component
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -34,7 +35,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Layout>{children}</Layout> {/* Wrap children with Layout */}
+          <div>
+            <Header />
+            <main className="container mx-auto p-4">{children}</main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

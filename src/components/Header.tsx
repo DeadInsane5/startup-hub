@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from './ui/button'
 import { Navbar1 } from './navbar1'
 const Header = () => {
     return (
@@ -8,7 +7,7 @@ const Header = () => {
                 <Navbar1
                     logo={{
                         url: "/",
-                        src: "",
+                        src: " ",
                         alt: "logo",
                         title: "Startup-Hub",
                     }}
@@ -18,16 +17,20 @@ const Header = () => {
                             url: "/discover",
                         },
                         {
+                            title: "Investors",
+                            url: "/investors",
+                        },
+                        {
                             title: "Resources",
                             url: "/resources",
                         },
                         {
-                            title: "Community",
-                            url: "/community",
-                        },
-                        {
                             title: "Events",
                             url: "/events",
+                        },
+                        {
+                            title: "Community",
+                            url: "/community",
                         },
                     ]}
                     auth={{

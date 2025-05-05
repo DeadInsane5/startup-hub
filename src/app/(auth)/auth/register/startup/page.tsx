@@ -1,6 +1,6 @@
 "use client"
 import { useRouter } from "next/navigation"
-import { Rocket, ArrowRight } from "lucide-react"
+import { ArrowRight, RocketIcon } from "lucide-react"
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -17,7 +17,7 @@ export default function Register() {
                 <Card className="w-full max-w-md relative z-10">
                     <CardHeader>
                         <CardTitle className="p-2">
-                        <Rocket className="h-5 w-5" />
+                            <RocketIcon className="h-5 w-5" />
                             Register as a Startup
                         </CardTitle>
                         <CardDescription>Create your startup profile to connect with investors, customers, and resources.</CardDescription>

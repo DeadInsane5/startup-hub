@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { Rocket, ArrowRight } from "lucide-react"
+import { ArrowRight, RocketIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -14,7 +14,7 @@ export default function Register() {
       <Card className="w-full max-w-md relative z-10">
         <CardHeader>
           <div className="flex items-center gap-2">
-            <Rocket className="h-5 w-5" />
+            <RocketIcon className="h-5 w-5" />
             <CardTitle>Join StartupHub</CardTitle>
           </div>
           <CardDescription>Choose how you want to join our platform</CardDescription>
