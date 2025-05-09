@@ -1,6 +1,6 @@
 import { Hero1 } from '@/components/hero1'
 import { Button } from '@/components/ui/button'
-import { BarChart3, BookOpen, Calendar, MessageSquare, Rocket, RocketIcon, Users } from 'lucide-react'
+import { BarChart3, BookOpen, Calendar, MessageSquare, Rocket, Users } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -64,7 +64,7 @@ const page = () => {
               <div className="space-y-2">
                 <h3 className="font-bold">Analytics & Insights</h3>
                 <p className="text-sm text-muted-foreground">
-                  Track profile views, engagement metrics, and visitor demographics to optimize your startup's presence.
+                  Track profile views, engagement metrics, and visitor demographics to optimize your startups presence.
                 </p>
               </div>
             </div>

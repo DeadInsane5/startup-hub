@@ -1,6 +1,8 @@
 import { LoginForm } from "@/components/login-form"
 import ModeToggle from "@/components/ModeToggle"
 import { RocketIcon } from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
 
 export default function LoginPage() {
   return (

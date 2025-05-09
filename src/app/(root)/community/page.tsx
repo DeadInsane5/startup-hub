@@ -61,7 +61,7 @@ export default function Community() {
                 <CardContent>
                   <h3 className="font-semibold mb-2">Strategies for early-stage fundraising in the current market</h3>
                   <p className="text-sm text-muted-foreground mb-3">
-                    I'd love to hear from other founders about their recent experiences with seed funding. What's
+                    Id love to hear from other founders about their recent experiences with seed funding. Whats
                     working now? What channels are most effective?
                   </p>
                   <div className="flex gap-2">
@@ -100,7 +100,7 @@ export default function Community() {
                 <CardContent>
                   <h3 className="font-semibold mb-2">Building a remote-first company culture</h3>
                   <p className="text-sm text-muted-foreground mb-3">
-                    As more startups embrace remote work, I'm curious how others are building strong company cultures
+                    As more startups embrace remote work, Im curious how others are building strong company cultures
                     without a physical office.
                   </p>
                   <div className="flex gap-2">
@@ -139,7 +139,7 @@ export default function Community() {
                 <CardContent>
                   <h3 className="font-semibold mb-2">Content marketing strategies that actually work for startups</h3>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Let's share content marketing approaches that have driven real results for early-stage startups with
+                    Lets share content marketing approaches that have driven real results for early-stage startups with
                     limited budgets.
                   </p>
                   <div className="flex gap-2">

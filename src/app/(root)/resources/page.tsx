@@ -129,7 +129,7 @@ export default function Resources() {
                     <Clock className="mr-1 h-3 w-3" /> 45 min
                   </div>
                 </div>
-                <CardTitle className="text-lg">Product-Market Fit: How to Know When You've Found It</CardTitle>
+                <CardTitle className="text-lg">Product-Market Fit: How to Know When Youve Found It</CardTitle>
                 <CardDescription>Expert insights on validating your startup idea</CardDescription>
               </CardHeader>
               <CardContent>
