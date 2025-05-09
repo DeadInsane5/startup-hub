@@ -1,6 +1,5 @@
 import { createClient } from "./server";
 import { NextResponse } from "next/server";
-import { NextRequest } from "next/server";
 
 export async function middleware() {
     const res = NextResponse.next();

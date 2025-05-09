@@ -172,7 +172,7 @@ export default async function InvestorsPage({
                               <div>
                                 <p className="text-xs font-medium">Investment Focus</p>
                                 <div className="flex flex-wrap gap-1 mt-1">
-                                  {investor.investment_focus.map((focus: string, i: any) => (
+                                  {investor.investment_focus.map((focus: string, i: number) => (
                                     <Badge key={i} variant="outline" className="text-xs">
                                       {focus}
                                     </Badge>
@@ -188,7 +188,7 @@ export default async function InvestorsPage({
                               <div>
                                 <p className="text-xs font-medium">Investment Stages</p>
                                 <div className="flex flex-wrap gap-1 mt-1">
-                                  {investor.investment_stages.map((stage: string, i: any) => (
+                                  {investor.investment_stages.map((stage: string, i: number) => (
                                     <Badge key={i} variant="outline" className="text-xs">
                                       {stage}
                                     </Badge>

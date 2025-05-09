@@ -41,7 +41,7 @@ interface Navbar1Props {
     title: string;
   };
   menu?: MenuItem[];
-  search?: {};
+  search?: string;
   auth?: {
     login: {
       title: string;
