@@ -148,26 +148,26 @@ export default async function DiscoverPage({
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {startups.length > 0 ? (
                   startups.map((startup) => (
-                    <Card key={startup.id}>
+                    <Card key={startup.id} className="w-min">
                       <CardHeader className="pb-2">
                         <div className="flex items-center gap-2">
                           <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                             {startup.logo_url ? (
                               <Image
                                 src={startup.logo_url || "/placeholder.svg"}
-                                alt={startup.name}
+                                alt={startup.startup_name}
                                 width={40}
                                 height={40}
                                 className="rounded-full"
                               />
                             ) : (
                               <span className="font-bold text-primary">
-                                {startup.name.substring(0, 2).toUpperCase()}
+                                {startup.startup_name.substring(0, 2).toUpperCase()}
                               </span>
                             )}
                           </div>
                           <div>
-                            <CardTitle className="text-lg">{startup.name}</CardTitle>
+                            <CardTitle className="text-lg">{startup.startup_name}</CardTitle>
                             <p className="text-sm text-muted-foreground">{startup.tagline || "No tagline provided"}</p>
                           </div>
                         </div>
@@ -177,7 +177,7 @@ export default async function DiscoverPage({
                           src={startup.logo_url || "/placeholder.svg?height=150&width=350"}
                           width={350}
                           height={150}
-                          alt={startup.name}
+                          alt={startup.startup_name}
                           className="rounded-md object-cover w-full h-[150px] mb-3"
                         />
                         <p className="text-sm text-muted-foreground line-clamp-3 mb-3">
@@ -189,12 +189,12 @@ export default async function DiscoverPage({
                         </div>
                       </CardContent>
                       <CardFooter className="flex justify-between">
-                        <Button variant="outline" size="sm">
+                        <Button variant="outline" className="m-2" size="sm">
                           <Star className="mr-2 h-4 w-4" />
                           Follow
                         </Button>
                         <Link href={`/startups/${startup.id}`}>
-                          <Button size="sm">View Profile</Button>
+                          <Button className="m-2" size="sm">View Profile</Button>
                         </Link>
                       </CardFooter>
                     </Card>

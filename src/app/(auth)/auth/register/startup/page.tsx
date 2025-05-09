@@ -1,5 +1,5 @@
 "use client"
-import { ArrowDownIcon, ChevronDown, RocketIcon } from "lucide-react"
+import { ChevronDown, RocketIcon } from "lucide-react"
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -9,9 +9,8 @@ import { registerStartup, signUpStartUp } from "./actions"
 import { useState } from "react"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectValue } from "@/components/ui/select"
-import { Arrow, SelectTrigger } from "@radix-ui/react-select"
+import { SelectTrigger } from "@radix-ui/react-select"
 import { Label } from "@/components/ui/label"
-import { DropdownMenu } from "@radix-ui/react-dropdown-menu"
 
 export default function Register() {
     const [registered, setRegistered] = useState(false)

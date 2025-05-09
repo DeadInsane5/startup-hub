@@ -1,10 +1,7 @@
-import { Feature43 } from '@/components/feature43'
-import Header from '@/components/Header'
 import { Hero1 } from '@/components/hero1'
 import { Button } from '@/components/ui/button'
 import { BarChart3, BookOpen, Calendar, MessageSquare, Rocket, RocketIcon, Users } from 'lucide-react'
 import Link from 'next/link'
-import { title } from 'process'
 import React from 'react'
 
 const page = () => {
