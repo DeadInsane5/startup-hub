@@ -133,6 +133,7 @@ const Navbar1 = ({
       url: "#",
     },
   ],
+  search = "",
   auth = {
     login: { title: "Login", url: "#" },
     signup: { title: "Sign up", url: "#" },
@@ -162,13 +163,31 @@ const Navbar1 = ({
           <div className="flex gap-2">
             <form className="hidden md:flex relative">
               <SearchIcon className="absolute top-1/2 left-3 -translate-y-1/2 size-4 text-muted-foreground" />
-              <Input type="search" className="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-[200px] lg:w-[300px] pl-8" placeholder="Search startups..." />
+              <Input
+                type="search"
+                value={search}
+                onChange={(e) => {
+                  // Parent component should handle state updates
+                  console.log("Search input:", e.target.value);
+                }}
+                className="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-[200px] lg:w-[300px] pl-8"
+                placeholder="Search startups..."
+              />
             </form>
             <ModeToggle />
-            <Button asChild variant="outline" size="sm" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 rounded-md px-3">
+            <Button
+              asChild
+              variant="outline"
+              size="sm"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 rounded-md px-3"
+            >
               <a href={auth.login.url}>{auth.login.title}</a>
             </Button>
-            <Button asChild size="sm" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+            <Button
+              asChild
+              size="sm"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+            >
               <a href={auth.signup.url}>{auth.signup.title}</a>
             </Button>
           </div>
@@ -199,6 +218,19 @@ const Navbar1 = ({
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-6 p-4">
+                  <form className="relative">
+                    <SearchIcon className="absolute top-1/2 left-3 -translate-y-1/2 size-4 text-muted-foreground" />
+                    <Input
+                      type="search"
+                      value={search}
+                      onChange={(e) => {
+                        // Parent component should handle state updates
+                        console.log("Mobile search input:", e.target.value);
+                      }}
+                      className="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full pl-8"
+                      placeholder="Search startups..."
+                    />
+                  </form>
                   <Accordion
                     type="single"
                     collapsible
